@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="dom.css" rel="stylesheet"/>
+    
+    <title>DOM</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Bookholic</h1>
+                <p>HaHaHaHa</p>
+                <form id = "search-books">
+                    <input type="text" placeholder="Search Books..."/>
+
+                </form>
+            </div>
+        </header>
+        <div id="book-list">
+            <h2 class="title">Books to Read</h2>
+            <ul>
+                <li>
+                    <span class="name">Name of the Wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Name of the World</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Name of the Man</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Name of the nothing</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+        
+            <form id="add-book">
+                <input type="checkbox" id="hide" />
+                <label for="hide">Hide all books</label>
+                <input type='text' placeholder="Add a book"/>
+                <button>Add</button>
+            </form>
+            <div id="tabbed-content">
+                <ul class="tabs">
+                    <li data-target="#about" class="active">About</li>
+                    <li data-target="#contact">Contact</li>
+                </ul>
+                <div class="panel active" id="about">
+                    <p>About Content</p>
+                    <p>This was developed by following Net Ninja's DOM tutorial (18 videos, I guess)
+                        
+                    </p>
+                
+
+                </div>
+                <div class="panel" id="contact">
+                    <p>Contact </p>
+                    <p>Contact Number ##### #####</p>
+                </div>
+                    
+            </div>
+        
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>

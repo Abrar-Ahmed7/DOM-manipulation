@@ -1,0 +1,522 @@
+<html>
+
+
+<body>
+
+
+<div class='box'>
+
+
+</div>
+
+
+
+<div class='box1'>
+
+
+</div>
+
+
+<div class='box2'>
+
+
+</div>
+
+<div class='box3'>
+
+
+</div>
+
+
+
+
+<button class="btn start" onclick="start()">Start
+</button>
+<button class="btn stop" onclick="stop()">Stop
+</button>
+
+<style>
+
+
+body{
+    background-color:white;
+}
+
+
+    
+    .btn{
+  border: 1px solid #3498db;
+  background: green;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 50px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.start,.stop{
+  color: black;
+}
+
+.start {
+     margin-top: 400px;
+}
+
+
+
+
+:root{
+    --iteration: infinite;
+    --animation-state: paused;
+    /*--box-color:red;
+    --box-color1:green;
+    --box-color2:yellow;
+    --box-color3:blue; */
+}
+
+
+.box {
+    background: red;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    top:0px;
+    left:0px;
+    position: absolute;
+    animation-name: haha;
+    animation-duration:8s;
+    /*animation: haha 5s infinite*/
+    animation-iteration-count: var(--iteration);
+    animation-play-state: var(--animation-state);
+}
+
+
+@keyframes haha{
+    0% {
+        background-color:red;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+    12% {
+        background-color:yellow;
+        width:300px;
+        height:50px;
+       /* left: 300px;
+        top: 0px; */
+        border-radius: 5%;
+    }
+
+
+    24% {
+        background-color:yellow;
+        width:50px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+
+    36% {
+        background-color:blue;
+        width:300px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+    48% {
+        background-color:blue;
+        width:50px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+    60% {
+        background-color:green;
+        width:300px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+    72% {
+        background-color:green;
+        width:50px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+    84% {
+        background-color:red;
+        width:300px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+
+    }
+
+    96% {
+        background-color:red;
+        border-radius: 50%; 
+    }
+}
+
+
+
+.box1 {
+    background: green;
+    width:50px;
+    height: 50px;
+    top:250px;
+    left:0px;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: haha1;
+    animation-duration:8s;
+    /*animation: haha 5s infinite*/
+    animation-iteration-count:var(--iteration);
+    animation-play-state: var(--animation-state);
+
+}
+
+
+@keyframes haha1{
+    0% {
+        background-color:green;
+        
+        
+        top: 250px;
+        left: 0px;
+        border-radius: 50%;
+    }
+
+    12% {
+        background-color:red;
+        width:50px;
+        height:300px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+
+    24% {
+        background-color:red;
+        width:50px;
+        height: 50px;
+        left: 0px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+
+    36% {
+        background-color:yellow;
+        width:50px;
+        height: 300px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+
+    48% {
+        background-color:yellow;
+        width:50px;
+        height: 50px;
+        left: 0px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+
+    60% {
+        background-color:blue;
+        width:50px;
+        height: 300px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+    72% {
+        background-color:blue;
+        width:50px;
+        height: 50px;
+        left: 0px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+    84% {
+        background-color:green;
+        width:50px;
+        height: 300px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5%;
+    }
+    96% {
+        background-color:green;
+        border-radius: 50%; 
+    }
+}
+
+
+
+
+.box2 {
+    background: yellow;
+    width:50px;
+    height: 50px;
+    top:0px;
+    left:250px;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: haha2;
+    animation-duration:8s;
+    /*animation: haha 5s infinite*/
+    animation-iteration-count:var(--iteration);
+    animation-play-state: var(--animation-state);
+}
+
+
+
+@keyframes haha2{
+    0% {
+        background-color:yellow;
+        left: 250px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+    12% {
+        background-color:blue;
+        width:50px;
+        height:300px;
+        left: 250px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+
+    24% {
+        background-color:blue;
+        width:50px;
+        height: 50px;
+        left: 250px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+
+    36% {
+        background-color:green;
+        width:50px;
+        height: 300px;
+        left: 250px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+
+    48% {
+        background-color:green;
+        width:50px;
+        height: 50px;
+        left: 250px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+
+    60% {
+        background-color:red;
+        width:50px;
+        height: 300px;
+        left: 250px;
+        top: 0px;
+        border-radius: 5%;
+    }
+
+    72% {
+        background-color:red;
+        width:50px;
+        height: 50px;
+        left: 250px;
+        top: 0px;
+        border-radius: 50%;
+    }
+
+    84% {
+        background-color:yellow;
+        width:50px;
+        height: 300px;
+        left: 250px;
+        top: 0px;
+        border-radius: 5%;
+    }
+    96% {
+        background-color:yellow;
+        border-radius: 50%; 
+    }
+}
+
+
+
+
+.box3 {
+    background: blue;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    top:250px;
+    left:250px;
+    position: absolute;
+    animation-name: haha3;
+    animation-duration:8s;
+    /*animation: haha 5s infinite*/
+    animation-iteration-count:var(--iteration);
+    animation-play-state: var(--animation-state);
+}
+
+
+
+@keyframes haha3{
+    0% {
+        background-color:blue;
+        left: 250px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+    12% {
+        background-color:green;
+        width:300px;
+        height:50px;
+       left: 0px;
+        top: 250px;
+        border-radius: 5%;
+    }
+
+
+    24% {
+        background-color:green;
+        width:50px;
+        height: 50px;
+        left: 250px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+
+    36% {
+        background-color:red;
+        width:300px;
+        height: 50px;
+        left: 0px;
+        top: 250px;
+        border-radius: 5%;
+    }
+
+    48% {
+        background-color:red;
+        width:50px;
+        height: 50px;
+        left: 250px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+    60% {
+        background-color:yellow;
+        width:300px;
+        height: 50px;
+        left: 0px;
+        top: 250px;
+        border-radius: 5%;
+    }
+
+    72% {
+        background-color:yellow;
+        width:50px;
+        height: 50px;
+        left: 250px;
+        top: 250px;
+        border-radius: 50%;
+    }
+
+    84% {
+        background-color:blue;
+        width:300px;
+        height: 50px;
+        left: 0px;
+        top: 250px;
+        border-radius: 5%;
+    }
+    100% {
+        background-color:blue;
+        border-radius: 50%; 
+    }
+}
+
+
+
+
+
+</style>
+
+
+
+
+<script>
+
+
+
+
+var colors = ["red", "yellow", "blue", "Green"];
+var colors1 = ["Green","red", "yellow", "blue"];
+var colors2 = [ "yellow", "blue", "Green","red"];
+var colors3 = [ "blue", "Green","red", "yellow"];
+var count=0;
+console.log(colors1[2])
+
+function start(){
+document.documentElement.style.setProperty('--animation-state', 'play');
+//var state = getComputedStyle(document.documentElement).getPropertyValue('--animation-state');
+//for(var count=0;count<colors.length;count++)
+/*while(true)
+{    
+    document.documentElement.style.setProperty('--box-color', colors[count]);
+    document.documentElement.style.setProperty('--box-color1', colors1[count]);
+    document.documentElement.style.setProperty('--box-color2', colors2[count]);
+    document.documentElement.style.setProperty('--box-color3', colors3[count]); 
+   
+    count++;
+     if (count>3) { 
+            count = 0;
+     }
+     console.log(count);
+}*/
+}
+
+function stop(){
+document.documentElement.style.setProperty('--animation-state', 'paused');
+}
+
+</script>
+</body>
+</html>
